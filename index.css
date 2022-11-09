@@ -31,7 +31,6 @@ a, li{
     align-items: center;
     width: 100%;
     height: 3rem;
-
 }
 .cabecalho ul{
     display: flex;
@@ -91,6 +90,7 @@ a, li{
 }
 .right img{
     border-radius: 12%;
+    box-shadow: 0.9em 0.9em 0.9em rgba(0, 0, 0, 0.338);
 }
 .hero2 {
     text-align: center;
@@ -98,5 +98,34 @@ a, li{
 .hero2 h1{
     font-size: 7rem;
     color: var(--blue-header);
-    text-shadow: 0.1em 0.1em 0.05em gray;
+    text-shadow: 0.1em 0.1em 0.03em rgba(0, 0, 0, 0.136);
+    padding-top: 200px;
+}
+.hero2 h2{
+    font-weight: 500;
+    margin: 20px 220px 200px 220px;
+    font-size: 2em;
+
+}
+.wrapper .hero3{
+    background: #1D0036;
+    width: 100%;
+    height: 100vh;
+    border-radius: 40px 40px 40px 40px;
+}
+.hero3 .center{
+    text-align: center;
+    padding-top: 100px;
+}
+.hero3 h1{
+    color: var(--blue-header);
+    background-color: #5C65C0;
+    padding: 10px;
+    margin: 0px 550px 0px 550px;
+    border-radius: 50px;
+}
+.hero3 h2{
+    padding-top: 5%;
+    color: var(--verde-sub);
+    font-size: 5rem;
 }

@@ -12,13 +12,16 @@
     font-size: 17px;
     font-family: 'Jost', sans-serif;
 }
-
+.html{
+    font-size: 62.5%;
+}
 .wrapper .hero {
     border-radius: 0px 0px 40px 40px;
 }
 body{
     background: url(img/fundo.jpg) no-repeat;
     background-size: cover;
+    font-size: 1.6 rem;
 }
 a, li{
     list-style: none;
@@ -34,21 +37,21 @@ a, li{
 }
 .cabecalho ul{
     display: flex;
-    gap: 7rem;
+    gap: 5rem;
 }
-
 .cabecalho li{
     color: var(--blue-header);
     padding: .5rem 1rem;
 }
 .hero{
+    display: flex;
     background: #0C0016;
     position: relative;
     width: 100%;
     height: 90vh;
 }
 .hero .left {
-    width: 50rem;
+    width: 50%;
     height: 30rem;
     position: absolute;
     top: 10%;
@@ -86,7 +89,8 @@ a, li{
 }
 
 .hero .right {
-    width: 30rem;
+    flex-direction: column;
+    width: 30%;
     height: 30rem;
     position: absolute;
     right: 0%;
@@ -95,6 +99,9 @@ a, li{
 .right img{
     border-radius: 12%;
     box-shadow: 0.9em 0.9em 0.9em rgba(0, 0, 0, 0.338);
+}
+.container{
+    flex-direction: column;
 }
 .hero2 {
     text-align: center;
@@ -108,7 +115,7 @@ a, li{
 .hero2 h2{
     font-weight: 500;
     margin: 20px 220px 200px 220px;
-    font-size: 2em;
+    font-size: 2rem;
 
 }
 .hero3{
@@ -134,4 +141,26 @@ a, li{
     padding-top: 5%;
     color: var(--verde-sub);
     font-size: 5rem;
+}
+
+
+@media (max-width: 1024px) {
+    .cabecalho {
+        font-size: 80%;
+    }
+}
+@media (max-width: 736px) {
+    .cabecalho {
+        font-size: 60%;
+    }
+}
+@media (max-width: 736px) {
+    .cabecalho li{
+        gap: 4rem;
+    }
+}
+@media (max-width: 736px) {
+    .hero {
+        flex-direction: column;
+    }
 }

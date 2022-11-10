@@ -11,6 +11,7 @@
     --blue-header: #0C0016;
     font-size: 17px;
     font-family: 'Jost', sans-serif;
+    --card-color: linear-gradient(148deg, rgba(255,255,255,0.56) 0%, rgba(255,255,255,0.01) 100%);
 }
 .html{
     font-size: 62.5%;
@@ -23,11 +24,11 @@ body{
     background-size: cover;
     font-size: 1.6 rem;
 }
-a, li{
+li, a{
     list-style: none;
     text-decoration: none;
 }
-.cabecalho{
+#cabecalho{
     background: #6F95FF;
     display: flex;
     justify-content: space-around;
@@ -35,11 +36,11 @@ a, li{
     width: 100%;
     height: 3rem;
 }
-.cabecalho ul{
+#cabecalho ul{
     display: flex;
     gap: 5rem;
 }
-.cabecalho li{
+#cabecalho li a{
     color: var(--blue-header);
     padding: .5rem 1rem;
 }
@@ -102,56 +103,131 @@ a, li{
     margin: 7% 0% 0% 90%;
 }
 
-.hero2 {
+#sobre-mim {
     text-align: center;
 }
-.hero2 h1{
+#sobre-mim h1{
     font-size: 7rem;
     color: var(--blue-header);
     text-shadow: 0.1em 0.1em 0.03em rgba(0, 0, 0, 0.136);
     padding-top: 200px;
 }
-.hero2 h2{
+#sobre-mim p{
     font-weight: 500;
     margin: 20px 220px 200px 220px;
     font-size: 2rem;
 
 }
-.container {
-    display: block;
+.about {
+    display: flex;
+    flex-direction: column;
 }
-.hero3{
-    background: #1D0036;
-    width: 96%;
-    height: 200vh;
+#experience{
+    background: linear-gradient(148deg, rgba(29,0,54,1) 0%, rgba(12,0,22,1) 100%);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
     border-radius: 40px 40px 40px 40px;
-    margin: 30px;
+    margin: 3rem;
+    margin-bottom: 10rem;
+    padding-bottom: 7rem;
 }
-.hero3 .center{
+#content{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+#content h1{
+    color: var(--verde-sub);
+    margin-top: 2rem;
+}
+#content p{
+    color: var(--verde-sub);
+    padding: 2rem;
+}
+#content .first{
+    background: var(--card-color);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 2rem;
+    text-align: center;
+}
+#content .second{
+    background: var(--card-color);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 2rem;
+    text-align: center;
+}
+#content .third{
+    background: var(--card-color);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 2rem;
+    text-align: center;
+}
+#experience .texto{
     text-align: center;
     padding-top: 100px;
-    
 }
-.hero3 h1{
+#experience .texto h1{
     color: var(--blue-header);
     background-color: #5C65C0;
-    padding: 10px;
-    margin: 0px 550px 0px 550px;
-    border-radius: 50px;
+    margin: 0rem 35rem 0rem 35rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    
 }
-.hero3 h2{
+#experience .texto p{
     padding-top: 5%;
     color: var(--verde-sub);
     font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
-
+#contacts{
+    background: #0C0016;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 40px 40px 40px 40px;
+    margin: 3rem;
+    padding-top: 3rem;
+}
+#contacts .texto h1{
+    text-align: center;
+    color: var(--blue-header);
+    background-color: #5C65C0;
+    margin: 0rem 35rem 0rem 35rem;
+    border-radius: 2rem;
+    padding: 0.5rem; 
+}
+#contacts .texto p{
+    text-align: center;
+    padding: 3rem 15rem 0rem 15rem;
+    color: var(--verde-sub);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+#images {
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+}
+#images img {
+    max-width:10%;
+    height:auto;
+}
 @media (max-width: 736px) {
-    .cabecalho li{
+    #cabecalho li{
         gap: 4rem;
     }
 }
 @media (max-width: 1250px) {
-    .cabecalho {
+    #cabecalho {
         width: 150vh;
     }
 }
@@ -188,7 +264,7 @@ a, li{
     }
 }
 @media (max-width: 768px) {
-    .cabecalho {
+    #cabecalho {
         font-size: 130%;
         height: 5rem;
     }
@@ -217,19 +293,19 @@ a, li{
     }
 }
 @media (max-width: 1000px) {
-    .hero2 h1 {
+    #sobre-mim h1 {
         font-size: 500%;
     }
 }
 @media (max-width: 1000px) {
-    .hero2 h1 {
+    #sobre-mim h1 {
         margin-left: 35%;
         margin-right: auto; 
         
     }
 }
 @media (max-width: 1000px) {
-    .hero2 h2 {
+    #sobre-mim h2 {
         font-size: 200%;
         margin-left: 35%;
         margin-right: auto; 
@@ -237,30 +313,30 @@ a, li{
     }
 }
 @media (max-width: 1400px) {
-    .hero3 {
+    #experience {
         width: 96%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
     }
 }
 @media (max-width: 1200px) {
-    .hero3 {
+    #experience {
         width: 100%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
-        margin: 30px;
+        margin: 1.7rem;
     }
 }
 @media (max-width: 1360px) {
-    .hero3 h1 {
+    #experience h1 {
         font-size: 200%;
         padding: 10px;
-        margin: 0px 500px 0px 500px;
+        margin: 0rem 35rem 0rem 35rem;
         border-radius: 50px;
     }
 }
 @media (max-width: 1270px) {
-    .hero3 h1 {
+    #experience h1 {
         font-size: 200%;
         padding: 10px;
         margin: 0px 350px 0px 350px;
@@ -268,20 +344,36 @@ a, li{
     }
 }
 @media (max-width: 1200px) {
-    .hero3 h2 {
+    #experience p {
         font-size: 400%;
     }
 }
-@media (max-width: 1000px) {
-    .hero3 {
+@media (max-width: 1024px) {
+    #experience {
         width: 120%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
-        margin: 30px;
+        margin: 1.7rem;
+    }
+}
+@media (max-width: 768px) {
+    #experience {
+        width: 120%;
+        height: 200vh;
+        border-radius: 40px 40px 40px 40px;
+        margin: 1.7rem;
+    }
+}
+@media (max-width: 425px) {
+    #experience {
+        width: 120%;
+        height: 200vh;
+        border-radius: 40px 40px 40px 40px;
+        margin: 1.7rem;
     }
 }
 @media (max-width: 1000px) {
-    .hero3 h1 {
+    #experience h1 {
         font-size: 200%;
         padding: 10px;
         margin: 0px 220px 0px 220px;

@@ -1,0 +1,1 @@
+Descobri que há formas de fazer um site responsivo muito melhor. Estava contente até lembrar da responsividade kkkkk. Vou tentar novos projetos e depois continuo.

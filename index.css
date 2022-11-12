@@ -128,12 +128,31 @@ li, a{
     gap: 2rem;
     flex-direction: column;
     border-radius: 40px 40px 40px 40px;
-    margin: 3rem;
-    margin-bottom: 10rem;
     padding-bottom: 7rem;
+    width: 95vw;
+    margin: auto;
+}
+#experience .texto{
+    text-align: center;
+    padding-top: 100px;
+}
+#experience .texto h1{
+    color: var(--blue-header);
+    background-color: #5C65C0;
+    width: 15vw;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    
+}
+#experience .texto p{
+    padding-top: 5%;
+    color: var(--verde-sub);
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 #content{
-    width: 100%;
     display: flex;
     gap: 2rem;
     padding: 2rem;
@@ -168,39 +187,23 @@ li, a{
     border-radius: 2rem;
     text-align: center;
 }
-#experience .texto{
-    text-align: center;
-    padding-top: 100px;
-}
-#experience .texto h1{
-    color: var(--blue-header);
-    background-color: #5C65C0;
-    margin: 0rem 35rem 0rem 35rem;
-    border-radius: 2rem;
-    padding: 0.5rem;
-    
-}
-#experience .texto p{
-    padding-top: 5%;
-    color: var(--verde-sub);
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
 #contacts{
     background: #0C0016;
     display: flex;
     gap: 2rem;
     flex-direction: column;
     border-radius: 40px 40px 40px 40px;
-    margin: 3rem;
+    width: 95vw;
+    margin: auto;
     padding-top: 3rem;
+    margin-top: 10rem;
 }
 #contacts .texto h1{
     text-align: center;
     color: var(--blue-header);
     background-color: #5C65C0;
-    margin: 0rem 35rem 0rem 35rem;
+    width: 15vw;
+    margin: auto;
     border-radius: 2rem;
     padding: 0.5rem; 
 }
@@ -314,14 +317,13 @@ li, a{
 }
 @media (max-width: 1400px) {
     #experience {
-        width: 96%;
+        
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
     }
 }
 @media (max-width: 1200px) {
     #experience {
-        width: 100%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
         margin: 1.7rem;
@@ -350,7 +352,6 @@ li, a{
 }
 @media (max-width: 1024px) {
     #experience {
-        width: 120%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
         margin: 1.7rem;
@@ -358,7 +359,6 @@ li, a{
 }
 @media (max-width: 768px) {
     #experience {
-        width: 120%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
         margin: 1.7rem;
@@ -366,7 +366,6 @@ li, a{
 }
 @media (max-width: 425px) {
     #experience {
-        width: 120%;
         height: 200vh;
         border-radius: 40px 40px 40px 40px;
         margin: 1.7rem;
